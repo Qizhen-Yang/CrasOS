@@ -1,0 +1,104 @@
+#taskbar {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	box-sizing: border-box;
+	padding: 6px 16px;
+	box-shadow: inset 0 1px 0 rgba(0 0 0 / 10%);
+	z-index: 114514;
+	background-color: rgba(255 255 255 / 60%);
+	backdrop-filter: blur(15px);
+	user-select: none;
+}
+
+#left {
+	float: left;
+}
+#right {
+	float: right;
+}
+
+#windowManager {
+	display: inline-block;
+	background: url("https://img.icons8.com/fluency/72/task-view.png") 50% 50% no-repeat;
+	background-size: 80%;
+	width: 36px;
+	height: 36px;
+}
+
+#battery {
+	display: inline-block;
+	background: url("https://img.icons8.com/fluency-systems-regular/72/battery-unknown.png") 50% 50% no-repeat;
+	background-size: 60% !important;
+	width: 36px;
+	height: 36px;
+}
+	#battery.low {
+		background: url("https://img.icons8.com/fluency-systems-regular/72/low-battery.png") 50% 50% no-repeat;
+	}
+	#battery.medium {
+		background: url("https://img.icons8.com/fluency-systems-regular/72/medium-battery.png") 50% 50% no-repeat;
+	}
+	#battery.high {
+		background: url("https://img.icons8.com/fluency-systems-regular/72/high-battery.png") 50% 50% no-repeat;
+	}
+	#battery.full {
+		background: url("https://img.icons8.com/fluency-systems-regular/72/full-battery.png") 50% 50% no-repeat;
+	}
+	#battery.charging {
+		background: url("https://img.icons8.com/fluency-systems-regular/72/charge-battery.png") 50% 50% no-repeat;
+	}
+
+#batteryDetail #batteryDetailIcon {
+	display: inline-block;
+	background: url("https://img.icons8.com/fluency-systems-regular/144/undefined/battery-unknown.png") 50% 50% no-repeat;
+	background-size: 100% !important;
+	width: 72px;
+	height: 72px;
+	
+}
+	#batteryDetail #batteryDetailIcon.low {
+		background: url("https://img.icons8.com/fluency-systems-regular/144/low-battery.png") 50% 50% no-repeat;
+	}
+	#batteryDetail #batteryDetailIcon.medium {
+		background: url("https://img.icons8.com/fluency-systems-regular/144/medium-battery.png") 50% 50% no-repeat;
+	}
+	#batteryDetail #batteryDetailIcon.high {
+		background: url("https://img.icons8.com/fluency-systems-regular/144/high-battery.png") 50% 50% no-repeat;
+	}
+	#batteryDetail #batteryDetailIcon.full {
+		background: url("https://img.icons8.com/fluency-systems-regular/144/full-battery.png") 50% 50% no-repeat;
+	}
+	#batteryDetail #batteryDetailIcon.charging {
+		background: url("https://img.icons8.com/fluency-systems-regular/144/charge-battery.png") 50% 50% no-repeat;
+	}
+
+#time {
+	display: inline-block;
+	width: 96px;
+	height: 36px;
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+}
+
+#taskbar > * > * {
+	border-radius: 4px;
+	transition: background-color 0.2s ease-in-out;
+}
+	#taskbar > * > *:hover {
+		background-color: rgba(255 255 255 / 5%);
+		backdrop-filter: blur(15px);
+		transition: background-color 0.2s ease-in-out;
+	}
+	#taskbar > * > *:active {
+		background-color: rgba(255 255 255 / 20%);
+		backdrop-filter: blur(5px);
+		filter: blur(0.5px);
+		transform: scale(0.95);
+		transition: all 0.2s ease-in-out;
+	}

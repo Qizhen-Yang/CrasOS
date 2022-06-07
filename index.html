@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CrasOS</title>
+	<link rel="stylesheet" href="assets/css/window.css">
+	<link rel="stylesheet" href="assets/css/taskbar.css">
+</head>
+<body>
+	<div id="main"></div>
+	<div id="taskbar">
+		<div id="left">
+			<div id="windowManager" title="Window Manager"
+				onclick="winMgrMain()"></div>
+		</div>
+		<div id="right">
+			<div id="battery" title="Not supported.
+Currently only available on Chromium browsers. :("></div>
+			<div id="time"></div>
+		</div>
+	</div>
+	<script src="https://fastly.jsdelivr.net/gh/jquery/jquery@latest/dist/jquery.min.js"></script>
+	<script src="https://fastly.jsdelivr.net/gh/markedjs/marked@latest/marked.min.js"></script>
+	<script src="assets/js/window.js"></script>
+	<script src="assets/js/taskbar.js"></script>
+
+	<script src="assets/systemApps/windowManager.js"></script>
+</body>
+</html>
